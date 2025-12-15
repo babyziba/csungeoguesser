@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="app.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxOcvI9fQy_wSzvv7ZHKz87IhrDXK9AiE&callback=initMap">
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="left">
+      <h1>Map Quiz. Please double click<br />on the map the location of:</h1>
+
+      <div id="questionList" class="list"></div>
+
+      <div class="summary">
+        <div class="row">
+          <span>Progress:</span>
+          <span id="progress">0/5</span>
+        </div>
+        <div class="row">
+          <span>Time:</span>
+          <span id="time">00:00</span>
+        </div>
+      </div>
+
+      <div id="finalBig" class="finalBig hidden"></div>
+
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div id="statusLine" class="statusLine">Press Start.</div>
+    </div>
+
+    <div class="right">
+      <div id="map"></div>
+    </div>
+  </div>
+</body>
+</html>
